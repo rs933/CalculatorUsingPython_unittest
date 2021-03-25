@@ -49,16 +49,16 @@ class TestMain(unittest.TestCase):
                 main_func = calculator.Calculator().division(arg1, arg2)
                 self.assertEqual(main_func, result)
 
-    # def testingSquare(self):
-    #     with open('./Unit Test Square.csv', 'r') as addition:
-    #         data = csv.reader(addition)
-    #         converting_into_list = list(data)
-    #         for x in range(1, len(converting_into_list)):
-    #             arg1 = int(converting_into_list[x][x - x])
-    #             # arg2 = int(converting_into_list[x][x-x+1])
-    #             result = int(converting_into_list[x][x-x + 1])
-    #             main_func = calculator.Calculator().square(arg1)
-    #             self.assertEqual(main_func, result)
+    def testingSquare(self):
+        with open('./Unit Test Square.csv', 'r') as addition:
+            data = csv.reader(addition)
+            converting_into_list = list(data)
+            for x in range(1, len(converting_into_list)):
+                arg1 = int(converting_into_list[x][x - x])
+                # arg2 = int(converting_into_list[x][x-x+1])
+                result = int(converting_into_list[x][x-x + 1])
+                main_func = calculator.Calculator().square(arg1)
+                self.assertEqual(main_func, result)
 
     # def testingSquareRoot(self):
     #     with open('./Unit Test Addition.csv', 'r') as addition:
