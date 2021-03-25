@@ -1,5 +1,5 @@
 class Calculator:
-    num1 = int(input("Enter first number: "))
+    # num1 = int(input("Enter first number: "))
 
     @staticmethod
     def operations():
@@ -75,6 +75,6 @@ class Calculator:
 
 
 
-operation_type = Calculator.operations()
-print(Calculator.calculation(operation_type))
+# operation_type = Calculator.operations()
+# print(Calculator.calculation(operation_type))
 
