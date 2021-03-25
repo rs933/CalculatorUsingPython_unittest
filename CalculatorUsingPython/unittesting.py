@@ -27,16 +27,16 @@ class TestMain(unittest.TestCase):
                 main_func = calculator.Calculator().subtraction(arg1, arg2)
                 self.assertEqual(main_func, result)
 
-    # def testingMultiplication(self):
-    #     with open('./Unit Test Multiplication.csv', 'r') as addition:
-    #         data = csv.reader(addition)
-    #         converting_into_list = list(data)
-    #         for x in range(1, len(converting_into_list)):
-    #             arg1 = int(converting_into_list[x][x - x])
-    #             arg2 = int(converting_into_list[x][x-x+1])
-    #             result = int(converting_into_list[x][x-x + 2])
-    #             main_func = calculator.Calculator().multiplication(arg1, arg2)
-    #             self.assertEqual(main_func, result)
+    def testingMultiplication(self):
+        with open('./Unit Test Multiplication.csv', 'r') as addition:
+            data = csv.reader(addition)
+            converting_into_list = list(data)
+            for x in range(1, len(converting_into_list)):
+                arg1 = int(converting_into_list[x][x - x])
+                arg2 = int(converting_into_list[x][x-x+1])
+                result = int(converting_into_list[x][x-x + 2])
+                main_func = calculator.Calculator().multiplication(arg1, arg2)
+                self.assertEqual(main_func, result)
 
     # def testingDivision(self):
     #     with open('./Unit Test Division.csv', 'r') as addition:
