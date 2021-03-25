@@ -60,15 +60,15 @@ class TestMain(unittest.TestCase):
                 main_func = calculator.Calculator().square(arg1)
                 self.assertEqual(main_func, result)
 
-    # def testingSquareRoot(self):
-    #     with open('./Unit Test Addition.csv', 'r') as addition:
-    #         data = csv.reader(addition)
-    #         converting_into_list = list(data)
-    #         for x in range(1, len(converting_into_list)):
-    #             arg1 = int(converting_into_list[x][x - x])
-    #             result = int(converting_into_list[x][x-x + 1])
-    #             main_func = calculator.Calculator().square_root(arg1)
-    #             self.assertEqual(main_func, result)
+    def testingSquareRoot(self):
+        with open('./Unit Test Addition.csv', 'r') as addition:
+            data = csv.reader(addition)
+            converting_into_list = list(data)
+            for x in range(1, len(converting_into_list)):
+                arg1 = int(converting_into_list[x][x - x])
+                result = int(converting_into_list[x][x-x + 1])
+                main_func = calculator.Calculator().square_root(arg1)
+                self.assertEqual(main_func, result)
 
 
 if __name__ == '__main__':
